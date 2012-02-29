@@ -1,0 +1,23 @@
+{spawn, exec} = require 'child_process'
+{ print } = require 'util'
+
+task 'run', 'run app', ->
+  watch = spawn 'coffee', ['-w','-c','-o','./app','./src']
+  watch.stdout.on 'data', (data) -> 'Compiler: ' + print data.toString()
+  watch.stderr.on 'data', (data) -> 'Compiler: ' + print data.toString()
+
+task 'build', 'build for production', ->
+  coffee = spawn 'coffee', [
+    '-j'
+    '../../public/javascripts/sencha-app.js'
+    '-c'
+    './src/lib'
+    './src/config'
+    './src/model'
+    './src/store'
+    './src/view'
+    './src/controller'
+    './src/app.coffee'
+  ]
+  coffee.stdout.on 'data', (data) -> 'Production: ' + print data.toString()
+  coffee.stderr.on 'data', (data) -> 'Production: ' + print data.toString()

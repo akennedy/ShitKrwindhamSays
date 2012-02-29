@@ -1,0 +1,21 @@
+{
+  "name": "shitkrwindhamsays",
+  "subdomain": "shitkrwindhamsays",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.3",
+  "dependencies": {
+    "coffee-script": ">= 1.x",
+    "redis": "*",
+    "coffeecup": "*",
+    "uglify-js": "*",
+    "connect-assets": "*",
+    "stylus": "*",
+    "nib": "*",
+    "express": "*"
+  },
+  "engines": {
+    "node": "v0.6.x"
+  }
+}
