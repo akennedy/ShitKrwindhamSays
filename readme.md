@@ -1,25 +1,15 @@
-# shitkrwindhamsays
+# Shit krwindham Says
 
-Welcome
 
-Framework: express
- 
-Template: Jade
+###krwindham often has enlightening and interesting things to express
 
-DataStore: Redis
- 
+###Here is a place to capture those expressions while learning a little about Sencha Touch
+
 # About
 
-# Install
 
-# Usage
+### ShitKrwindhamSays is Sencha Touch App Running on node.js
 
-# Testing
-
-# Feedback
-
-# License
-
-# Contributors
+### ShitkrwindhamSays was templeted with [cupcake](https://github.com/twilson63/cupcake)
 
 
